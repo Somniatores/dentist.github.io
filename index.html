@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dreamers">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+    <title> Стоматологічна клініка УжНУ</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <!-- Fonts -->
+
+		<link href='http://fonts.googleapis.com/css?family=Forum&subset=cyrillic-ext,latin,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/icomoon.css">
+    <link rel="stylesheet" href="assets/css/animate-custom.css">
+    <link rel="stylesheet" href="assets/js/lib/owl-carousel/assets/owl.carousel.css">
+    <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic'>
+    
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+    
+    <script type="text/javascript"src="assets/js/lib/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/js/lib/modernizr.custom.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+  </head>
+  <body ng-app="app" data-spy="scroll" data-offset="0" data-target="#navbar-main" ng-controller="LanguageCtrl">
+
+	<div class="row">
+		<div class="col-md-1 hidden-xs"></div>
+		  <div class="col-md-6 col-xs-12">
+		  	<img src="assets/img/log.png" class="uzhnu-logo img-responsive" alt="Responsive image" style="color=white">
+		  	<h1>Стоматологічна клініка</h1>
+		  </div>	
+		  <div class="col-md-5 col-xs-12">
+		  	<div class="flags">
+			  	<img src="assets/img/flags/ua.svg" ng-click="setLanguage('ua')" class="flag" style="border: 1px solid black">
+			  	<img src="assets/img/flags/gb.svg" ng-click="setLanguage('en')" class="flag" style="border: 1px solid black">
+			  	<img src="assets/img/flags/sk.svg" ng-click="setLanguage('sk')"class="flag" style="border: 1px solid black">
+		  	</div>
+		  </div>
+		</div>
+	</div>
+
+	<div id="owl-demo" class="owl-carousel">
+		<div class="slide slide1">
+	  	<div class="container">
+	  		<h1>Стоматологічна клініка </br> УжНУ</h1>
+	  		<h2>Досвід перевірений роками</h2>
+	  	</div>
+	  </div>
+	  <div class="slide slide2">
+	  	<div class="container">
+	  		<h1 class="text-right">Ваші щирі посмішки - </br>кращий показник якості</h1>
+	  		<h2 class="text-right">У нас працює команда професіоналів із багаторічним стажем роботи</h2>
+	  	</div>
+	  </div>
+	 	<div class="slide slide1">
+	  	<div class="container">
+	  		<h1>Ваші щирі посмішки - </br>кращий показник якості</h1>
+	  		<h2>У нас працює команда професіоналів із багаторічним стажем роботи</h2>
+	  	</div>
+	  </div>
+	</div>
+
+	<div id="navbar-main">
+    <!-- Fixed navbar -->
+    <div class="navbar ">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon icon-shield" style="font-size:30px; color:#3498db;"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#home" class="smoothScroll">Головна</a></li>
+						<li> <a href="#about" class="smoothScroll"> Про нас</a></li>
+						<li> <a href="#services" class="smoothScroll"> Послуги</a></li>
+						<li> <a href="#price" class="smoothScroll"> Прайс</a></li>
+						<li> <a href="#team" class="smoothScroll"> Співробітники</a></li>
+						<li> <a href="#portfolio" class="smoothScroll"> Фотографії</a></li>
+						<li> <a href="#blog" class="smoothScroll"> Спеціальні пропозиції</a></li>
+						<li> <a href="#contact" class="smoothScroll"> Контакти </a></li>
+					</ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+  </div>
+
+	<!-- ==== ABOUT ==== -->
+	<div class="container" id="about" name="about">
+		<br>
+		<h1 class="text-center">СТОМАТОЛОГІЧНА КЛІНІКА</h1>
+		<hr>
+		<pre><p class="text-justify">{{language.about}}</p></pre>
+	</div><!-- container -->
+		
+	<!-- ==== SERVICES ==== -->
+	<div id="greywrap" name="services">
+		<div class="container">
+			<h1 class="text-center">НАШІ ПОСЛУГИ</h1>
+		<hr>
+		<br>
+		<br>
+		<div class="row">
+			<div class="col-lg-3 col-sm-6 col-xs-12">
+				<span class="icon icon-stack"></span>
+				<h2>Bootstrap 3</h2>
+				<p>Shield Theme is powered by Bootstrap 3. The incredible Mobile First Framework is the best option to run your website. </p>
+			</div><!-- col-lg-4 -->
+				
+			<div class="col-lg-3 col-sm-6 col-xs-12">
+				<span class="icon icon-eye"></span>
+				<h2>Retina Ready</h2>
+				<p>You can use this theme with your iPhone, iPad or MacBook Pro. This theme is retina ready and that is awesome. </p>
+			</div><!-- col-lg-4 -->	
+			
+			<div class="col-lg-3 col-sm-6 col-xs-12">
+				<span class="icon icon-heart"></span>
+				<h2>Crafted with Love</h2>
+				<p>We don't make sites, we craft themes with love & passion. That is our most valued secret. We only do thing that we love.   </p>
+			</div><!-- col-lg-4 -->	
+
+			<div class="col-lg-3 col-sm-6 col-xs-12">
+				<span class="icon icon-heart"></span>
+				<h2>Crafted with Love</h2>
+				<p>We don't make sites, we craft themes with love & passion. That is our most valued secret. We only do thing that we love.   </p>
+			</div><!-- col-lg-4 -->	
+		</div><!-- row -->
+
+		<div class="row">
+			<div class="col-lg-3 col-sm-6 col-xs-12">
+				<span class="icon icon-stack"></span>
+				<h2>Bootstrap 3</h2>
+				<p>Shield Theme is powered by Bootstrap 3. The incredible Mobile First Framework is the best option to run your website. </p>
+			</div><!-- col-lg-4 -->
+				
+			<div class="col-lg-3 col-sm-6 col-xs-12">
+				<span class="icon icon-eye"></span>
+				<h2>Retina Ready</h2>
+				<p>You can use this theme with your iPhone, iPad or MacBook Pro. This theme is retina ready and that is awesome. </p>
+			</div><!-- col-lg-4 -->	
+			
+			<div class="col-lg-3 col-sm-6 col-xs-12">
+				<span class="icon icon-heart"></span>
+				<h2>Crafted with Love</h2>
+				<p>We don't make sites, we craft themes with love & passion. That is our most valued secret. We only do thing that we love.   </p>
+			</div><!-- col-lg-4 -->	
+
+			<div class="col-lg-3 col-sm-6 col-xs-12">
+				<span class="icon icon-heart"></span>
+				<h2>Crafted with Love</h2>
+				<p>We don't make sites, we craft themes with love & passion. That is our most valued secret. We only do thing that we love.   </p>
+			</div><!-- col-lg-4 -->	
+		</div><!-- row -->
+		</div>
+	</div><!-- greywrap -->
+	
+	<!-- ==== SECTION DIVIDER1 -->
+	<section class="section-divider textdivider divider2">
+		<div class="container">
+			<h1>НАЙКРАЩИЙ ПОКАЗНИК - ПОСМІШКА ПАЦІЄНТІВ</h1>
+			<hr>
+			<p>У процесі лікування ми використовуємо передові досягнення стоматології</p>
+		</div><!-- container -->
+	</section><!-- section -->
+	<br>
+	<br>
+<!-- ==== SECTION Prices ==== -->
+	<div class="container">
+		<div class="panel panel-default" ng-controller="PriceCtrl">
+		  <div class="panel-heading">Ціни та послуги</div>
+
+		  <table class="table">
+		    <thead>
+		      <tr>
+		        <th>#</th>
+		        <th>Servic</th>
+		        <th>Price</th>
+		      </tr>
+		    </thead>
+		    <tbody>
+		      <tr ng-repeat="item in prices">
+		        <th scope="row">{{item.id}}</th>
+		        <td>{{item.name}}</td>
+		        <td>{{item.price}}</td>
+		      </tr>
+		    </tbody>
+		  </table>
+		</div>
+	</div> 
+
+	<!-- ==== TEAM MEMBERS ==== -->
+	<div class="container" id="team" name="team">
+		<br>
+		<div class="row text-center">
+			<h1 class="text-center">Наші співробітники</h1>
+			<hr>
+			<br>
+			<br>
+			<div class="col-lg-3 col-sm-6 col-xs-12">
+				<img src="assets/img/team/kostenko.jpg"alt="">
+				<h4><b>Костенко Євген Якович</b></h4>
+				<p>Декан факультету, доктор медичних наук, доцент</p>
+			</div><!-- col-lg-3 -->
+			
+			<div class="col-lg-3 col-sm-6 col-xs-12">
+				<img src="assets/img/team/kalij.jpg"alt="">
+				<h4><b>Калій Василь Васильович</b></h4>
+				<p>Доктор медичних наук, професор</p>
+			</div><!-- col-lg-3 -->
+
+			<div class="col-lg-3 col-sm-6 col-xs-12">
+				<img src="assets/img/team/klitunska.jpg"alt="">
+				<h4><b>Клітинська Оксана Василівна</b></h4>
+				<p>Кандидат медичних наук, професор</p>
+			</div><!-- col-lg-3 -->
+
+			<div class="col-lg-3 col-sm-6 col-xs-12">
+				<img src="assets/img/team/potapchuk.jpg"alt="">
+				<h4><b>Потапчук Анатолій Мефодійович</b></h4>
+				<p>Доктор медичних наук, професор</p>
+			</div><!-- col-lg-3 -->
+		</div><!-- row -->
+	</div><!-- container -->
+	
+	<br>
+	<br>
+	<br>
+				
+		<!-- ==== PORTFOLIO ==== -->
+	<div class="container" id="portfolio" name="portfolio">
+		<h1 class="text-center">Наша клініка</h1>
+		<hr>
+		<br>
+		<br>
+				
+		<div class="container">
+			<div class="row">			
+				<!-- PORTFOLIO IMAGE 1 -->
+				<div class="col-md-4 col-xs-6">
+		    	<div class="grid mask">
+					<figure style="background-image: url(assets/img/portfolio/folio01.jpg);">
+						<figcaption>
+							<h5>DASHBOARD</h5>
+							<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Дізнатися більше</a>
+						</figcaption><!-- /figcaption -->
+					</figure><!-- /figure -->
+		    	</div><!-- /grid-mask -->
+				</div><!-- /col -->
+										      
+			  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			    <div class="modal-dialog">
+			      <div class="modal-content">
+			        <div class="modal-header">
+			          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			          <h4 class="modal-title">Project Title</h4>
+			        </div>
+			        <div class="modal-body">
+			          <p><img class="img-responsive" src="assets/img/portfolio/folio01.jpg" alt=""></p>
+			          <p>This project was crafted for Some Name corp. Detail here a little about your job requirements and the tools used. Tell about the challenges faced and what you and your team did to solve it.</p>
+			          <p><b><a href="#">Visit Site</a></b></p>
+			        </div>
+			        <div class="modal-footer">
+			          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			        </div>
+			      </div><!-- /.modal-content -->
+			    </div><!-- /.modal-dialog -->
+			  </div><!-- /.modal -->
+
+				<!-- PORTFOLIO IMAGE 2 -->
+				<div class="col-md-4 col-xs-6">
+			    	<div class="grid mask">
+						<figure style="background-image: url(assets/img/portfolio/folio02.jpg);">
+							<figcaption>
+								<h5>UI DESIGN</h5>
+								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Дізнатися більше</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+				</div><!-- /col -->
+				
+				<!-- PORTFOLIO IMAGE 3 -->
+				<div class="col-md-4 col-xs-6">
+			    	<div class="grid mask">
+						<figure style="background-image: url(assets/img/portfolio/folio03.jpg);">
+							<figcaption>
+								<h5>ANDROID PAGE</h5>
+								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Дізнатися більше</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+				</div><!-- /col -->
+
+				<div class="col-md-4 col-xs-6">
+			    	<div class="grid mask">
+							<figure style="background-image: url(assets/img/portfolio/folio04.jpg);">
+							<figcaption>
+								<h5>PROFILE</h5>
+								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Дізнатися більше</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+				</div><!-- /col -->
+				
+				<!-- PORTFOLIO IMAGE 5 -->
+				<div class="col-md-4 col-xs-6">
+			    	<div class="grid mask">
+						<figure style="background-image: url(assets/img/portfolio/folio05.jpg);">
+							<figcaption>
+								<h5>TWITTER STATUS</h5>
+								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Дізнатися більше</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+				</div><!-- /col -->
+				
+				<!-- PORTFOLIO IMAGE 6 -->
+				<div class="col-md-4 col-xs-6">
+			    	<div class="grid mask">
+						<figure style="background-image: url(assets/img/portfolio/folio06.jpg);">
+							<figcaption>
+								<h5>PHONE MOCKUP</h5>
+								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Дізнатися більше</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+				</div><!-- /col -->
+			</div><!-- /row -->
+			<br>
+			<br>
+		</div><!-- /row -->
+	</div><!-- /container -->
+
+	<section class="section-divider textdivider divider4">
+		<div class="container">
+			<h1>НЕЗАБУВАЙТЕ ПРО ПРОФІЛАКТИКУ</h1>
+			<hr>
+			<p>Час від часу звертайтеся до нас і ви назавжди забудете про дірки в зубах</p>
+		</div><!-- container -->
+	</section><!-- section -->
+
+	<div class="container">
+			<h1 class="text-center">Ужгород</h1>
+			<hr>
+			<p class="text-center">Вулиця Університетська №16</p>
+	</div>
+	<div id="googleMap" style="width:100%;height:380px;"></div>
+			
+	<div class="container" id="contact" name="contact">
+		<div class="row">
+		<br>
+			<h1 class="text-center">Дякуємо що відвідали нас</h1>
+			<hr>
+			<br>
+			<br>
+			<div class="col-lg-4">
+				<h2>Контактна інформація</h2>
+				<p><span class="icon icon-home"></span> Some Address 987, NY<br/>
+					<span class="icon icon-phone"></span> +34 9884 4893 <br/>
+					<span class="icon icon-mobile"></span> +34 59855 9853 <br/>
+					<span class="icon icon-envelop"></span><a href="#"> f-stomat@uzhnu.edu.ua</a>
+					<br/>
+					<span class="icon icon-facebook"></span> <a href="#"> BlackTie Agency </a> <br/>
+				</p>
+			</div><!-- col -->
+			
+			<div class="col-lg-4">
+				<h2>У вас є питання?</h2>
+					<form class="form-horizontal" role="form">
+					  <div class="form-group">
+					    <label for="inputEmail1" class="col-lg-4 control-label"></label>
+					    <div class="col-lg-10">
+					      <input type="email" class="form-control" id="inputEmail1" placeholder="Email">
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <label for="text1" class="col-lg-4 control-label"></label>
+					    <div class="col-lg-10">
+					      <input type="text" class="form-control" id="text1" placeholder="Ваше запитання">
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <div class="col-lg-10">
+					      <button type="submit" class="btn btn-success">Відправити</button>
+					    </div>
+					  </div>
+				   </form><!-- form -->
+				</p>
+			</div><!-- col -->
+			
+			<div class="col-lg-4">
+				<h2>Support Us</h2>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+			</div><!-- col -->
+
+		</div><!-- row -->
+	</div><!-- container -->
+
+	<div id="footerwrap">
+		<div class="container">
+			<h4>Created by <a href="http://somniatores.github.io">Dreamers</a> - Copyright 2015</h4>
+		</div>
+	</div>
+
+  <script type="text/javascript" src="assets/js/lib/angular.js"></script> 
+	<script type="text/javascript" src="assets/js/lib/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/js/lib/smoothscroll.js"></script>
+	<script type="text/javascript" src="assets/js/lib/owl-carousel/owl.carousel.js"></script>
+
+	<script type="text/javascript" src="assets/js/languages.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
+	<script type="text/javascript" src="assets/js/LanguageCtrl.js"></script>
+	<script type="text/javascript" src="assets/js/PriceCtrl.js"></script>
+
+</body>
+</html>

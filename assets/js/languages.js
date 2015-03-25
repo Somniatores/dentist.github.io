@@ -1,0 +1,11 @@
+var texts = {
+  ua: {
+    about: "Універсітетьска стоматологічна клініка заснована 26.10.2010 року на базі Стоматологічного факультету Ужгородського Національного Універсітету. Цей заклад об'єднав в собі висококваліфікованих фахівців стоматологічноі галузі, які поєднують клінічний досвід та викладацьку діяльність. Науково-медичний потенціал кафедр стоматологічного факультету розвиває та впроджує стоматологічну освіту, зберігаючи та відновлюючі стоматологічне здоров'я, використовуючі найсучасніші досягнення світовоі стоматології. Системний підхід до лікування та відновлення індівідуальноі посмішки виконується фахівцями всіх напрямків стоматології, яки мають багаторічний клінічний та науковий досвід роботи. В центрі дентальноі імплантології Універсітетськоі стоматологічноі клінікі виконується лікування за допомогою внутрішньокісткових імплантантів та ортопедичне відновлення складних клінічних ситуацій, які потребують комплексного вирішення. Вцентрі дентальноі гігієни та профілактіки застосовуються сучасні методи діагностіки та лікування стоматологічних захворювань у дітей та підлітків активно ведеться робота щодо запобіганнь розвитку патологічних станів ротовоі порожнини.",
+  },
+  en: {
+    about: "University Dental Clinic was founded 26.10.2010 on the basis of Dental Faculty of Uzhgorod National University. This establishment combines highly skilled professionals stomatolohichnoi industry, combining clinical experience and teaching. Scientific and medical potential of developing dental faculty departments and vprodzhuye dental education, maintaining or restoration of dental care using the latest achievements svitovoi dentistry. Systematic approach to treatment and recovery individualnoi smile performed by specialists in all areas of dentistry, yaks have many clinical and research experience. In the center dentalnoi Implantology Clinic performed Universitetskoi stomatolohichnoi treatment using intraosseous implants and orthopedic recovery complex clinical situations that require complex solutions. Dentalnoi in center care and prevention using modern methods of diagnosis and treatment of dental diseases in children and adolescents actively working to prevent the development of pathological conditions rotovoi cavity.",
+  },
+  sk: {
+    about: "",
+  },
+};
